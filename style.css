@@ -11,34 +11,43 @@ header {
     display: flex;
     justify-content: flex-start;
     background-color: black;
-    position: fixed;
     width: 100%;
-    top: 0;
     color: white;
     text-transform: uppercase;
     font-size: 2rem;
     padding: 1rem 2rem;
     flex-wrap: wrap;
+    margin: 0;
+    height: 10rem;
+    align-items: center;
 
 }
 
+
 .menu{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     flex-wrap: wrap;
     max-width: 100%;
     justify-content: center;
 }
 
 p{
-    color:grey
+    color:grey;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-    color: inherit;
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+a:hover{
+    color: red;
+    font-size: ;
+}
 h1{
     font-size: 4rem;
 }
@@ -74,7 +83,7 @@ section{
 
 
 .portfolio-card {
-    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.50);
+    box-shadow: 0 0px 10px rgba(36, 19, 19, 0.596);
     width: 25vw;
     height: 25vw;
     display: flex;
@@ -83,6 +92,7 @@ section{
     overflow: hidden;
     object-fit: contain;
     transform: translateY(60px);
+    background: linear-gradient(to bottom right, rgba(71, 71, 71, 0.281), rgba(0, 0, 0, 0.726));
 }
 
 .portfolio-card-social {
@@ -100,7 +110,7 @@ section{
 }
 
 .personel_name {
-    color: rgb(238, 59, 59)
+    color: red;
 }
 
 .about p {
@@ -109,8 +119,21 @@ section{
 
 .photo-titre {
     display: flex;
+    align-items: center;
     padding-right: 5rem;
+    gap: 5px;
 }
+
+.photo-titre img{
+    max-height: 100%;
+    height: 8vh;
+    width:auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+
 
 @media (max-width: 768px) {
     .about .portfolio-card {
@@ -119,5 +142,10 @@ section{
 
     }
 
+    .menu{
+        flex-direction: column;
+    }
+
+    
 
 }
