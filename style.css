@@ -127,7 +127,11 @@ p{
     display: flex;
     align-items: center;
     padding-right: 5rem;
-    gap: 5px;
+    gap: 5px; 
+}
+
+.photo-titre p { 
+    color: grey;
 }
 
 .photo-titre img{
