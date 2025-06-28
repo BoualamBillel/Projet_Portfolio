@@ -14,6 +14,13 @@
 
 <body>
     <header>
+        <div id="burger-button" class="burger-svg">
+            <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect width="100" height="15" rx="8" fill="white"></rect>
+                <rect y="30" width="100" height="15" rx="8" fill="white"></rect>
+                <rect y="60" width="100" height="15" rx="8" fill="white"></rect>
+            </svg>
+        </div>
         <div class="photo-titre">
             <img src="images/sharingan.gif" alt=" photo-personel">
             <p>BILAL</p>
@@ -71,6 +78,17 @@
         </section>
 
     </main>
+
+
+    <script>
+        const burgerButton = document.getElementById("burger-button");
+        const menu = document.querySelector(".menu");
+
+        burgerButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
 
 </body>
 
