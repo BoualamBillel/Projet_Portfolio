@@ -5,6 +5,7 @@ body {
     color: white;
     overflow-x: hidden;
     box-sizing: border-box;
+    position: relative;
 }
 
 header {
@@ -15,14 +16,24 @@ header {
     color: white;
     text-transform: uppercase;
     font-size: 2rem;
-    padding: 1rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
     flex-wrap: wrap;
     margin: 0;
     height: 10rem;
     align-items: center;
     position: fixed;
     z-index: 1000;
+    height: auto;
 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -150,6 +161,14 @@ p {
     z-index: 1001;
 }
 
+.akatsuki-img{
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    bottom: 224vh;
+    right: 16vh;
+    z-index: -1;
+}
 
 @media (max-width: 768px) {
     .about .portfolio-card {
@@ -241,7 +260,9 @@ p {
         top: 2.5rem;
 
     }.akatsuki-img{
-    margin-top: 5vh;
+    position: absolute;
+    top: 166vh;
+    
 }
 
 
