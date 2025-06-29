@@ -223,23 +223,27 @@ p {
         padding: 1rem;
     }
 
-.photo-titre {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+    .photo-titre {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
 
+    }
+
+    .photo-titre p {
+        font-size: 1rem;
+    }
+
+    .burger-svg {
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+
+    }.akatsuki-img{
+    margin-top: 5vh;
 }
 
-.photo-titre p{
-    font-size: 1rem;
-}
 
-.burger-svg{
-    display: block;
-    position: absolute;
-    top: 2.5rem;
-    
-}
 
 }
