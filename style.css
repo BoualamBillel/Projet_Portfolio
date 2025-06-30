@@ -30,7 +30,7 @@ header {
 
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -72,7 +72,7 @@ h2 {
 .about {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30vh;
+    padding-top: 20vh;
     justify-content: space-around;
     align-items: center;
     gap: 3rem;
@@ -161,14 +161,16 @@ p {
     z-index: 1001;
 }
 
-.akatsuki-img{
+.akatsuki-img {
     position: absolute;
     width: 40vh;
     height: 40vh;
-    bottom: 224vh;
-    right: 16vh;
+    right: 13%;
+    top: 6%;
     z-index: -1;
+
 }
+
 
 @media (max-width: 768px) {
     .about .portfolio-card {
@@ -198,6 +200,10 @@ p {
     .about p {
         font-size: 2rem;
         text-align: center;
+    }
+
+    .about-info{
+        padding-top: 5em;
     }
 
     .about {
@@ -259,11 +265,15 @@ p {
         position: absolute;
         top: 2.5rem;
 
-    }.akatsuki-img{
-    position: absolute;
-    top: 166vh;
-    
-}
+    }
+
+    .akatsuki-img {
+        position: absolute;
+        max-height: 100%
+        width: ;
+        top: 166vh;
+
+    }
 
 
 
