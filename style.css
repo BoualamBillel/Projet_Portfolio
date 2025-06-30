@@ -338,6 +338,9 @@ p {
         display: flex;
         justify-content: space-around;
         width: auto;
+        height: auto;
+        gap: 2em;
+        margin-top: 0;
     }
 
     header {
