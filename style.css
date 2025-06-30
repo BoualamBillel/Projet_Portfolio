@@ -339,7 +339,7 @@ p {
         justify-content: space-around;
         width: auto;
         height: auto;
-        gap: 2em;
+        gap: 0.8em;
         margin-top: 0;
     }
 
