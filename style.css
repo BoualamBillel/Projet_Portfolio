@@ -74,7 +74,6 @@ h2 {
     flex-wrap: wrap;
     padding-top: 20vh;
     justify-content: space-around;
-    align-items: center;
     gap: 3rem;
 
 }
@@ -82,12 +81,16 @@ h2 {
 .what-i-do {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20vh;
-    padding-left: 13em;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
     gap: 3rem;
+    padding: 1.5rem;
+    padding-left: 5em;
+}
+
+.what-i-do-text {
+    padding-left: 2em;
 }
 
 
@@ -108,6 +111,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5em;
+    padding: 3em;
 }
 
 .box-position-info h2 {
@@ -215,21 +219,28 @@ p {
 }
 
 .akatsuki-img {
-    position: absolute;
     width: 40vh;
     height: 40vh;
-    right: 13%;
-    top: 6%;
-    z-index: -1;
 
 }
 
 
+.itachi-akatsuki {
+    display: flex;
+    flex-direction: column;
+    gap: 9em;
+}
+
 @media (max-width: 768px) {
+
     .about .portfolio-card {
         justify-content: center;
         position: relative;
 
+    }
+
+    section{
+        padding: 2em;
     }
 
     header {
@@ -245,6 +256,20 @@ p {
         height: 80vW;
     }
 
+    .what-about .portfolio-card {
+        justify-content: center;
+        position: relative;
+        width: 80vw;
+        height: 80vw;
+        flex-wrap: wrap;
+    }
+
+    .box-position-info .portfolio-card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 5em;
+    }
+
     .portfolio-card-social {
         width: 12vw;
         height: 12vw;
@@ -256,12 +281,31 @@ p {
     }
 
     .about-info {
-        padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1em;
+        gap: 1em;
+
     }
 
     .about {
         text-align: center;
-        padding: 2vh 2vh;
+        padding-top: 10vh;
+        height: auto;
+    }
+
+    .what-i-do {
+        display: flex;
+        text-align: center;
+        padding-left: 0;
+
+    }
+
+    .mini-titre {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
     }
 
     img {
@@ -322,13 +366,27 @@ p {
 
     }
 
-    .akatsuki-img {
-        position: absolute;
-        max-height: 100% width:;
-        top: 166vh;
 
+    .about img {
+        justify-content: center;
     }
 
+    .what-i-do {
+        align-items: center;
+    }
 
+    .what-i-do-text {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .box-position-info {
+        
+    }
+
+    .itachi-akatsuki {
+        align-items: center;
+    }
 }
