@@ -231,7 +231,7 @@ p {
     gap: 9em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
 
     .about .portfolio-card {
         justify-content: center;
